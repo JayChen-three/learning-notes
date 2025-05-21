@@ -1,10 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen zhixu的学习笔记</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #2980b9;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1c6ea4;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #3498db;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        .card p {
+            color: #666;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            max-width: 800px;
+            margin: 2rem auto;
+            color: #555;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
-
+    <header>
+        <h1>Chen zhixu的学习笔记</h1>
+        <p class="subtitle">记录学习历程，分享知识见解</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#">编程技术</a></li>
+            <li><a href="#">数据科学</a></li>
+            <li><a href="#">读书笔记</a></li>
+            <li><a href="#">项目展示</a></li>
+            <li><a href="#">关于我</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="quote">
+            "学习不是为了知道更多，而是为了做得更好。" — 杜威
+        </div>
+        
+        <h2>最新笔记</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Python数据分析基础</h3>
+                <p>探索Python在数据分析领域的应用，包括Pandas、NumPy库的使用和数据可视化技巧。</p>
+                <a href="#">继续阅读 →</a>
+            </div>
+            
+            <div class="card">
+                <h3>机器学习算法概述</h3>
+                <p>深入理解常用机器学习算法的原理与应用场景，从回归到分类，从监督学习到无监督学习。</p>
+                <a href="#">继续阅读 →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Web开发最佳实践</h3>
+                <p>记录前端和后端开发中的实用技巧、设计模式和性能优化方法。</p>
+                <a href="#">继续阅读 →</a>
+            </div>
+        </div>
+        
+        <h2>学习路径</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>编程基础</h3>
+                <p>从基础语法到数据结构与算法，夯实编程技能的基石。</p>
+                <a href="#">查看详情 →</a>
+            </div>
+            
+            <div class="card">
+                <h3>专业技能</h3>
+                <p>包括前端开发、后端架构、数据库设计等专业领域的深入学习笔记。</p>
+                <a href="#">查看详情 →</a>
+            </div>
+            
+            <div class="card">
+                <h3>项目实战</h3>
+                <p>通过实际项目的开发过程，记录从需求分析到部署维护的全过程经验。</p>
+                <a href="#">查看详情 →</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Chen zhixu的学习笔记 | 持续学习，不断进步</p>
+    </footer>
 </body>
 </html>
